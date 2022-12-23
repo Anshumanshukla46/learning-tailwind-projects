@@ -7,70 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
 </head>
 
-<body>
+<body class="bg-[#e3eef8]">
 
-    <!-- do with flex -->
-    <div>
-        <div>
-            <img src="https://picsum.photos/203" alt="random">
+    <div class="flex">
+        <div class="h-10 w-16">
+            <img class="mt-2 cursor-pointer rounded-full" src="./logo.jpeg" alt="logo" />
         </div>
 
-        <div>
-            Get Free Landing Page
+        <div class="flex items-end justify-center space-x-12 text-gray-600">
+            <div class="ml-9 cursor-pointer hover:underline">Free Landing Page</div>
+
+            <div class="cursor-pointer hover:underline">Features</div>
+
+            <div class="cursor-pointer hover:underline">Service</div>
+
+            <div class="cursor-pointer hover:underline">Price</div>
+
+            <div class="cursor-pointer hover:underline">Contact</div>
         </div>
 
-        <div>Features</div>
-
-        <div>Service</div>
-
-        <div>Price</div>
-
-        <div>Contact</div>
-
-        <button>Get Started</button>
+        <div class="absolute right-0 mr-6">
+            <button
+                class="mt-1 rounded-full border-red-600 bg-blue-400 px-5 py-3 pb-3 text-right text-white hover:border-2 hover:border-blue-400 hover:bg-white hover:text-black">Get
+                Started</button>
+        </div>
     </div>
 
-    <div>
-        <p>Present Your Service</p>
-        <h1>Make landing page fast easily.</h1>
-        <p>Create custom landing page with shades that convert more visitors than any website, no coding is required.
-        </p>
 
-        <form action="./not-available">
-            <input type="text" name="name" id="name">
-            <input type="button" value="Subscribe">
+    <br><br><br>
+
+
+    <div class=" text-center text-gray-400">
+        <p>Present Your Service</p>
+        <br>
+        <h1 class="text-6xl font-bold text-black">Make landing page</h1>
+        <h1 class="mt-2 text-6xl font-bold text-black">fast and easily.</h1>
+
+        <p class="mt-5 text-3xl">Create custom landing page with shades that</p>
+        <p class="text-3xl">convert more visitors than any website, no coding is required.</p>
+
+        <form action="./not-available" class="m-9 text-center">
+            <input type="text" name="name" id="name" placeholder="Enter your email"
+                class="h-11 w-1/3 rounded-xl pl-4" />
+            <input type="button" value="Subscribe"
+                class="ml-12 rounded-full bg-orange-500 p-3 text-white hover:cursor-pointer hover:border-b-orange-500 hover:bg-white hover:text-black" />
         </form>
 
-        <p>Trusted by over 50,000+ customers</p>
+        <p class="-ml-28 -mt-6 text-xs">Trusted by over 50,000+ customers</p>
     </div>
 
-    <div>
-        <div>
-            <div>
-                <img src="https://picsum.photos/210" alt="random">
+
+
+    <div class="flex">
+        <div class="flex">
+            <!-- <div> -->
+            <img class="m-auto h-24 w-24 ml-2" src="./pencil.png" alt="random" />
+            <!-- </div> -->
+            <div class="m-auto ml-2 flex flex-col">
+                <h2 class="text-3xl font-semibold">Easy to Use</h2>
+                <p>Editing and customising essentials landing is easy and fast</p>
             </div>
-            <h2>Easy to Use</h2>
-            <p>Editing and customising essentials landing is easy and fast.</p>
         </div>
 
-        <div>
-            <div>
-                <img src="https://picsum.photos/200" alt="random">
+        <div class="flex">
+            <img class="m-auto h-24 w-24 ml-2" src="./book.jpeg" alt="random" />
+
+            <div class="m-auto ml-2 flex flex-col">
+                <h2 class="text-3xl font-semibold">100% responsive</h2>
+                <p>Editing and customising essentials landing is easy and fast</p>
             </div>
-            <h2>100% Responsive</h2>
-            <p>Editing and customising essentials landing is easy and fast.</p>
         </div>
 
-        <div>
-            <div>
-                <img src="https://picsum.photos/201" alt="random">
+        <div class="flex">
+            <img class="m-auto h-24 w-24 ml-2" src="./web-design.jpeg" alt="random" />
+
+            <div class="m-auto ml-2 flex flex-col">
+                <h2 class="mb-1 text-3xl font-semibold">50+ New pages</h2>
+                <p>Editing and customising essentials landing is easy and fast</p>
             </div>
-            <h2>50+ New Page</h2>
-            <p>Editing and customising essentials landing is easy and fast.</p>
         </div>
     </div>
+
+
 </body>
 
 </html>
