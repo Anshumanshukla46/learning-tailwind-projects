@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="./survey.jpeg" type="image/x-icon">
+</head>
+
+<body>
+
+    <main class="m-auto bg-green-500 text-center">
+        <h1 class="mb-6 text-6xl font-semibold text-white">Survey Form</h1>
+
+        <div class="inline-block w-2/4 border-2 border-black bg-white text-left">
+            <form class="ml-4 mt-3">
+                <label for="name">Name</label> <br />
+                <input type="text"
+                    class="mt-1 mb-2 w-11/12 border border-black pl-2 transition delay-150 duration-300 focus:translate-y-1 focus:translate-x-4 focus:scale-110"
+                    name="name" id="name" placeholder="John Doe" />
+                <br />
+
+                <label for="email">Email</label> <br />
+                <input type="text"
+                    class="mt-1 mb-2 w-11/12 border border-black pl-2 transition delay-150 duration-300 focus:translate-y-1 focus:translate-x-4 focus:scale-110"
+                    name="email" id="email" placeholder="example@xyz.com" /><br />
+
+                <label for="age">Age</label> <br />
+                <input type="number"
+                    class="mt-1 mb-2 w-11/12 border border-black pl-2 transition delay-150 duration-300 focus:translate-y-1 focus:translate-x-4 focus:scale-110"
+                    name="age" id="age" placeholder="20" />
+
+                <p
+                    class="drop-shadow-lg transition delay-150 duration-300 hover:-translate-y-1 hover:translate-x-8 hover:scale-110 hover:cursor-pointer">
+                    Would you recommend to a friend?</p>
+
+                <input type="radio" name="recom" id="radio1" />
+                <label for="radio1">Yes</label> <br />
+
+                <input type="radio" name="recom" id="radio2" />
+                <label for="radio2">No</label><br />
+
+                <input type="radio" name="recom" id="radio3" />
+                <label for="radio3">May be</label>
+
+                <p
+                    class="transition delay-150 duration-300 hover:-translate-y-1 hover:translate-x-8 hover:scale-110 hover:cursor-pointer">
+                    Language and Framework known (Check all that apply) -</p>
+
+                <input type="checkbox" name="C++" id="cpp" />
+                <label for="cpp">C++</label> <br />
+
+                <input type="checkbox" name="C#" id="c#" />
+                <label for="c#">C#</label> <br />
+
+                <input type="checkbox" name="Java" id="Java" />
+                <label for="Java">Java</label> <br />
+
+                <input type="checkbox" name="Python" id="Python" />
+                <label for="Python">Python</label> <br />
+
+                <input type="checkbox" name="Javascript" id="Javascript" />
+                <label for="Javascript">Javascript</label> <br />
+
+                <input type="checkbox" name="React" id="React" />
+                <label for="React">React</label> <br />
+
+                <input type="checkbox" name="Angular" id="Angular" />
+                <label for="Angular">Angular</label> <br />
+
+                <input type="checkbox" name="Django" id="Django" />
+                <label for="Django">Django</label> <br />
+
+                <input type="checkbox" name="Spring" id="Spring" />
+                <label for="Spring">Spring</label>
+                <br />
+
+                <p
+                    class="transition delay-150 duration-300 hover:-translate-y-1 hover:translate-x-8 hover:scale-110 hover:cursor-pointer">
+                    Any comments or suggestions-</p>
+                <textarea name="comments" class="pt-2 w-11/12 border border-black pl-2" id="comments" cols="8"
+                    rows="5"></textarea>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
